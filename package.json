@@ -1,14 +1,15 @@
 {
-  "name": "hackathon-starter",
-  "version": "5.1.1",
-  "description": "A boilerplate for Node.js web applications",
+  "name": "cobertura-indoor",
+  "version": "1.0.0.0",
+  "description": "Aplicación web para apelar falta de cobertura movil indoor",
   "repository": {
     "type": "git",
     "url": "https://github.com/VanDerCroix/hackatel2018.git"
   },
-  "author": "Sahat Yalkabov",
+  "author": "German De la Cruz",
   "license": "MIT",
   "scripts": {
+    "dev": "nodemon app.js",
     "postinstall": "npm rebuild node-sass",
     "start": "node app.js",
     "test": "nyc mocha --timeout=3000 --exit",
@@ -47,6 +48,7 @@
     "node-sass": "^4.9.3",
     "node-sass-middleware": "^0.11.0",
     "nodemailer": "^4.6.7",
+    "nodemon": "^1.18.3",
     "passport": "^0.4.0",
     "passport-facebook": "^2.1.1",
     "passport-github": "^1.1.0",
