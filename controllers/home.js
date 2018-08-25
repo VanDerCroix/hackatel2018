@@ -7,3 +7,13 @@ exports.index = (req, res) => {
     title: 'Home'
   });
 };
+
+/**
+ * GET /formulario
+ * registro de recurso de apelacion por cobertura indoor
+ */
+exports.index = (req, res) => {
+  res.render('index', {
+    title: 'Hackatel 2018'
+  });
+};

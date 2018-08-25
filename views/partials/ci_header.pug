@@ -1,0 +1,20 @@
+// navegacion
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand(href='https://www.osiptel.gob.pe/')
+    img(src='img/osiptel.png', alt='', style='width:30%')
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarNav.collapse.navbar-collapse
+    ul.navbar-nav.ml-auto
+      li.nav-item.active
+        a.nav-link(href='https://www.osiptel.gob.pe/')
+          | Inicio 
+          span.sr-only (current)
+      li.nav-item
+        a.nav-link(href='#') Tu Osiptel
+      li.nav-item
+        a.nav-link(href='#') Usuarios
+      li.nav-item
+        form.form-inline.ml-auto
+          input.form-control.mr-sm-2(type='search', placeholder='Buscar', aria-label='Search')
+          button.btn.btn-outline-primary.my-1.my-sm-0(type='submit') Buscar

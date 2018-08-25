@@ -1,6 +1,6 @@
 {
   "name": "cobertura-indoor",
-  "version": "1.0.0.0",
+  "version": "1.1.1",
   "description": "Aplicación web para apelar falta de cobertura movil indoor",
   "repository": {
     "type": "git",

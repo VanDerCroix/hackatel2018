@@ -141,6 +141,11 @@ app.post('/account/delete', passportConfig.isAuthenticated, userController.postD
 app.get('/account/unlink/:provider', passportConfig.isAuthenticated, userController.getOauthUnlink);
 
 /**
+ * Conbertura indoor routes.
+ */
+app.get('/formulario', homeController.index);
+
+/**
  * API examples routes.
  */
 app.get('/api', apiController.getApi);

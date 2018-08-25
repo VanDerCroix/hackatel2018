@@ -1,0 +1,107 @@
+extends ci_layout
+
+block content 
+  header.main-header
+    .background-overlay.text-white.px-5.py-5
+      #total.row
+        #info.col-lg-6.text-center.justify-content-center.align-self-center
+          h1 ANÁLISIS DE SEÑAL INDOOR
+          hr
+          ul.list-unstyled
+            | Recurso de apelación para usuarios de telefonía móvil:
+            br
+            br
+            ul
+              li
+                i.fa.fa-check  Eficaz
+                br
+              li
+                i.fa.fa-check  Seguro
+                br
+              li
+                i.fa.fa-check  Confidencial
+        #imagen.col-md-6
+          img.img-fluid.d-none.d-sm-block(src='/img/cel.jpg', alt='', style='width:60%')
+  // información
+  section.bg-light.text-center
+    .container
+      .row
+        .m-5
+          h3.text-primary ¿En qué consiste?
+          hr
+          p
+            | Es un recurso de apelación para los usuarios de telefonía móvil que no
+            | quedan satisfechos por las respuestas de sus proveedores frente al
+            | reclamo presentado, reclamo que consiste en la pobre disponibilidad
+            | del servicio dentro de edificios o parte de ellos, conocido como cobertura
+            | indoor, la propuesta consiste en reunir los datos del cliente y la
+            | indisponibilidad del servicio.
+          hr
+  // agregar la queja
+  section.bg-light.py-3
+    .container
+      .row
+        .col-lg-9
+          h3.text-primary Ingrese su queja
+          hr
+          form
+            .input-group.mb-3
+              .input-group-prepend
+                i.fa.fa-user.input-group-text
+              input.form-control(type='text', placeholder='Nombre')
+            .input-group.mb-3
+              .input-group-prepend
+                i.fa.fa-envelope.input-group-text
+              input.form-control(type='email', placeholder='ejemplo@gmail.com')
+            .input-group.mb-3
+              .input-group-prepend
+                label.input-group-text(for='inputGroupSelect01') Opciones
+              select#inputGroupSelect01.custom-select
+                option(selected='') ¿Hogar o empresa?
+                option(value='1') No cuento con cobertura en mi hogar
+                option(value='2') No cuento con cobertura en mi empresa
+            .input-group.mb-3
+              select#inputGroupSelect02.custom-select
+                option(selected='') ¿Qué tipo de problema desea solucionar?
+                option(value='1') One
+                option(value='2') Two
+                option(value='3') Three
+              .input-group-append
+                label.input-group-text(for='inputGroupSelect02') Elegir
+            .input-group.mb-3
+              .input-group-prepend
+                label.input-group-text(for='inputGroupSelect03') Departamento
+              select#inputGroupSelect03.custom-select(aria-label='Example select with button addon')
+                option(selected='') Seleccionar...
+                option(value='1') Amazonas
+                option(value='2') Áncash
+                option(value='3') Apurimac
+                option(value='4') Arequipa
+                option(value='5') Ayacucho
+                option(value='6') Cajamarca
+                option(value='7') Callao
+                option(value='8') Cuzco
+                option(value='9') Huancavelica
+                option(value='10') Huánuco
+                option(value='11') Ica
+                option(value='12') Junin
+                option(value='13') La Libertad
+                option(value='14') Lambayeque
+                option(value='15') Lima
+                option(value='16') Loreto
+                option(value='17') Madre de Dios
+                option(value='18') Moquegua
+                option(value='19') Pasco
+                option(value='20') Piura
+                option(value='21') Puno
+                option(value='22') San Martin
+                option(value='23') Tacna
+                option(value='24') Tumbes
+                option(value='25') Ucayali
+            .input-group.mb-3
+              .input-group-prepend
+                i.fa.fa-pencil.input-group-text
+              textarea.form-control(name='', id='', cols='30', rows='5', placeholder='Ingrese alguna queja extra')
+            button.btn.btn-primary.btn-md.btn-block
+              i.fa.fa-share-square
+              |         Enviar
