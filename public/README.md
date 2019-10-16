@@ -4,26 +4,26 @@
 ## getLinkedTactics
 
 Retorna un array de tacticas vinculadas filtradas por
-- medio de venta (sales_channel_code) _string_
-- numero de oferta (offer_number) _int_
-- codigo de estrategia (strategy_code) _string_
-- cantidad de tacticas (quantity) _int_
+- medio de venta **sales_channel_code** _string_
+- numero de oferta **offer_number** _int_
+- codigo de estrategia **strategy_code** _string_
+- cantidad de tacticas **quantity** _int_
 
 ## getDetailByCUV
 
 Retorna un array de tacticas vinculadas filtradas por
-- codigo de pais (country_iso) _string_
-- codigo de campaña (campaign_code) _int_
-- medio de venta (sales_mean_type_code) _int_
-- filtrar solo tacticas vinculadas (only_linked_tactics) _bool_
-- codigo unico de venta (cuv) _int_
+- codigo de pais **country_iso** _string_
+- codigo de campaña **campaign_code** _int_
+- medio de venta **sales_mean_type_code** _int_
+- filtrar solo tacticas vinculadas **only_linked_tactics** _bool_
+- codigo unico de venta **cuv** _int_
 
 ## getCUVByCountryCampaignCatalogStrategy
 
 Retorna un array de cuv's filtrado por
-- codigo de pais (country_iso) _string_
-- codigo de campaña (campaign_code) _int_
-- medio de venta (sales_mean_type_code) _int_
+- codigo de pais **country_iso** _string_
+- codigo de campaña **campaign_code** _int_
+- medio de venta **sales_mean_type_code** _int_
 
 # EJEMPLOS
 
